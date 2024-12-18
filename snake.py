@@ -6,15 +6,15 @@ pygame.init()
 WINDOW_WIDTH = 600
 WINDOW_HEIGHT = 600
 display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.se
+pygame.display.set_caption("~~Snake~~")
 
 FPS = 20
 clock = pygame.time.Clock()
 
 # Set game values
 SNAKE_SIZE = 20
-# TODO: create a head_x variable and assign it a value of WINDOW_WIDTH // 2
-# TODO: repeat for head_y and assign it a value of WINDOW_HEIGHT // 2 + 100
+head_x variable = WINDOW_WIDTH // 2
+head_y = WINDOW_HEIGHT // 2 + 100
 snake_dx = 0
 snake_dy = 0
 score = 0
@@ -33,7 +33,7 @@ def create_text_and_rect(text, color, background_color, **locations):
     for location in locations.keys():
         if location == "center":
             rect.center = locations[location]
-        if location == "topleft"
+        if location == "topleft":
             rect.topleft = locations[location]
     return text, rect
 
@@ -64,14 +64,14 @@ is_paused = False
 ef move_snake(event):
     global snake_dx, snake_dy
     if event.type == pygame.KEYDOWN:
-        key = event.key
+        key = event.key:
         if event.type == pygame.K_LEFT
             snake_dx = -1 * SNAKE_SIZE and snake_dy = 0
-        if evemt.type == pygame.K_RIGHT
+        if evemt.type == pygame.K_RIGHT:
             snake_dx SNAKE_SIZE and snake_dy = 0
-        if event.type == pygame.K_UP
+        if event.type == pygame.K_UP:
             snake_dx = 0 * snake_dy = -1 * SNAKE_SIZE
-        if event.type == pygame.K_DOWN
+        if event.type == pygame.K_DOWN:
             snake_dx = 0 * snake_dy = SNAKE_SIZE
 
 
@@ -94,30 +94,30 @@ def handle_snake():
     global snake_dx, snake_dy
     global = body_coords.insert(0, head_coord)
     global body_coords.pop()
-    # TODO: add snake_dx to head_x
-    # TODO: add snake_dy to head_y
-    # TODO: set head_coord to (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE)
+    global snake_dx(head_x)
+    global snake_dy(head_y)
+    global head_coord(head_x, head_y, SNAKE_SIZE, SNAKE_SIZE)
 
     def reset_game_after_game_over(event):
         global is_paused, score, head_x, head_y, head_coord, body_coords, snake_dx, snake_dy
-        # TODO: if event.type is equal to pygame.KEYDOWN
-        # TODO: set score to 0
-        # TODO: set head_x to WINDOW_WIDTH // 2
-        # TODO: set head_y to WINDOW_HEIGHT // 2 + 100
-        # TODO: set head_coord = (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE)
-        # TODO: set body_coords to an empty list
-        # TODO: set snake_dx to 0
-        # TODO: set snake_dy to 0
-        # TODO: set is_paused to False
-        pass  # TODO: remove this when done.
+        event.type == pygame.KEYDOWN
+        score = 0
+        head_x = WINDOW_WIDTH // 2
+        head_y = WINDOW_HEIGHT // 2 + 100
+        head_coord = (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE)
+        body_coords:
+        snake_dx = 0
+        snake_dy = 0
+        is_paused = False
+
 
     def check_end_game_after_game_over(event):
         global is_paused
         global running
-        # TODO: if event.type is equal to pygame.QUIT
-        # TODO: set is_paused to False
-        # TODO: set running to False
-        pass  # TODO: remove this when done.
+        event.type == pygame.QUIT
+        is_paused = False
+        running = False
+
 
     def check_game_over():
         global head_rect
@@ -150,18 +150,18 @@ def handle_snake():
 
 
 def blit_hud():
-    # TODO: call display_surface.blit(title_text, title_rect)
-    # TODO: call display_surface.blit(score_text, score_rect)
-    pass  # TODO: remove this pass when done.
+    display_surface.blit(title_text, title_rect)
+    display_surface.blit(score_text, score_rect)
+
 
 
 def blit_assets():
     global head_rect, apple_rect
-    # TODO: for body in body_coords:
-    # TODO: call pygame.draw.rect(display_surface, DARKGREEN, body)
-    # TODO: set head_rect to pygame.draw.rect(display_surface, GREEN, head_coord)
-    # TODO: set apple_rect to pygame.draw.rect(display_surface, RED, apple_coord)
-    pass  # TODO: remove this pass when done.
+    body_coords:
+    pygame.draw.rect(display_surface, DARKGREEN, body)
+    head_rect = pygame.draw.rect(display_surface, GREEN, head_coord)
+    set apple_rect = pygame.draw.rect(display_surface, RED, apple_coord)
+
 
 
 def update_display_and_tick_clock():
@@ -184,7 +184,7 @@ while running:
     check_collisions()
 
     # Update HUD
-    # TODO: set score_text to font.render("Score: " + str(score), True, GREEN, DARKRED)
+    score_text = font.render("Score: " + str(score), True, GREEN, DARKRED)
 
 
     display_surface.fill(WHITE)
