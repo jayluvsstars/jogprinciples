@@ -1,33 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="759be7a2-35f1-4dc9-9a4e-c2b79f982713" name="Changes" comment="" />
+    <list default="true" id="759be7a2-35f1-4dc9-9a4e-c2b79f982713" name="Changes" comment="added call to pycame.init(_)">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jayluvsstars&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jayluvsstars/jogprinciples.git&quot;,
+    &quot;accountId&quot;: &quot;d35c4de8-4d78-468b-892b-3471578a9b33&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2pyrb8ro7Uujj13aSDLXjZja2Bf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/boldsjal000/PycharmProjects/jogprinciples",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/boldsjal000/PycharmProjects/jogprinciples&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,11 +74,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733749224674</updated>
-      <workItem from="1733749225690" duration="15000" />
+      <workItem from="1733749225690" duration="1264000" />
+      <workItem from="1733750783207" duration="144000" />
+      <workItem from="1733750941456" duration="35000" />
+      <workItem from="1733750985848" duration="145000" />
+      <workItem from="1733751144295" duration="183000" />
+      <workItem from="1733921437055" duration="302000" />
+      <workItem from="1733921784088" duration="217000" />
+      <workItem from="1733922016641" duration="90000" />
+      <workItem from="1733922163845" duration="1845000" />
+      <workItem from="1734438422300" duration="2798000" />
+      <workItem from="1734524583677" duration="382000" />
+      <workItem from="1734525014531" duration="42000" />
+      <workItem from="1734525070904" duration="59000" />
+      <workItem from="1734525143036" duration="138000" />
+      <workItem from="1734525322781" duration="433000" />
+      <workItem from="1734525779843" duration="576000" />
+      <workItem from="1734526384593" duration="198000" />
+      <workItem from="1734526605825" duration="733000" />
+      <workItem from="1734527358522" duration="7000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1733749278799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733749278799</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added call to pycame.init(_)">
+      <option name="closed" value="true" />
+      <created>1733750460935</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733750460935</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="added call to pycame.init(_)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added call to pycame.init(_)" />
   </component>
 </project>
