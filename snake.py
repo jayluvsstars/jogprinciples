@@ -55,7 +55,7 @@ apple_rect = pygame.draw.rect(display_surface, RED, apple_coord)
 
 head_coord = (head_x, head_y, SNAKE_SIZE, SNAKE_SIZE)
 head_rect = pygame.draw.rect(display_surface, GREEN, head_coord)
-body_coords =
+body_coords()
 
 # The main game loop
 running = True
@@ -125,13 +125,13 @@ def handle_snake():
         global body_coords
         global running
         global is_paused
-        # TODO: if head_rect.left is negative or head_rect.right is greater than WINDOW_WIDTH or head_rect.top is negative or head_rect.bottom is greater than WINDOW_HEIGHT
+        if head_rect.left < head_rect.right > WINDOW_WIDTH or head_rect.top is negative or head_rect.bottom is greater than WINDOW_HEIGHT
         # or head_coord in body_coords
         # TODO: then do the following
-        # TODO: call display_surface.blit(game_over_text, game_over_rect)
-        # TODO: call display_surface.blit(continue_text, continue_rect)
+        display_surface.blit(game_over_text, game_over_rect)
+        display_surface.blit(continue_text, continue_rect)
         # TODO: call pygame.display.update()
-        # TODO: set is_paused to True
+        is_paused = True
         # TODO: while is_paused
         # TODO: for event in pygame.event.get()
         # TODO: call reset_game_after_game_over(event)
@@ -142,9 +142,9 @@ def handle_snake():
         # TODO: if head_rect.colliderect(apple_rect)
         # TODO: add 1 to the score
         # TODO: call pick_up_sound.play()
-        # TODO: set apple_x to random.randint(0, WINDOW_WIDTH - SNAKE_SIZE)
-        # TODO: set apple_y to random.randint(0, WINDOW_HEIGHT - SNAKE_SIZE)
-        # TODO: set apple_coord to (apple_x, apple_y, SNAKE_SIZE, SNAKE_SIZE)
+        apple_x = random.randint(0, WINDOW_WIDTH - SNAKE_SIZE)
+        apple_y = random.randint(0, WINDOW_HEIGHT - SNAKE_SIZE)
+        apple_coord = (apple_x, apple_y, SNAKE_SIZE, SNAKE_SIZE)
         # TODO: call body_coords.append(head_coord)
         pass  # TODO: remove this pass when done.
 
